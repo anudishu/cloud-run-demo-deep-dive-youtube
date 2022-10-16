@@ -8,7 +8,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 DB_INSTANCE_NAME = "my-awesome-db-instance"
-DB_HOST = "10.72.112.3"
+DB_HOST = "10.102.96.5"
 DB_USER = "root"
 DB_DATABASE = "sales"
 #DB_PASSWORD = "passw0rd" # don't do this. instead read it from secret manager 
