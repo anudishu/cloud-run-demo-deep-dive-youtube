@@ -11,7 +11,7 @@ DB_INSTANCE_NAME = "my-awesome-db-instance"
 DB_HOST = "10.72.112.3"
 DB_USER = "root"
 DB_DATABASE = "sales"
-#DB_PASSWORD = "passw0rd" # don't do this. instead read it from secret manager
+#DB_PASSWORD = "passw0rd" # don't do this. instead read it from secret manager 
 
 my_awesome_db_password_secret_name = "my_awesome_db_password"
 
@@ -68,7 +68,7 @@ def get_connection_unix_socket():
     print("getting connection unix socket")
 
     db_socket_dir = "/cloudsql"
-    cloud_sql_connection_name = f"{get_project_id()}:us-central1:{DB_INSTANCE_NAME}"
+    cloud_sql_connection_name = f"{get_project_id()}:us-east1:{DB_INSTANCE_NAME}"
 
     print(f"db_socket_dir: {db_socket_dir}")
     print(f"cloud_sql_connection_name: {cloud_sql_connection_name}")
